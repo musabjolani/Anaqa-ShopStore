@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <Fragment>
       hello
-      <Link to="/Home">Product File</Link>
+      <Link to="/productFile">Product File</Link>
     </Fragment>
   );
 }
