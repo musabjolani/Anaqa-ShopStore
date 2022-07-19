@@ -1,15 +1,16 @@
 import "./App.css";
 import Home from "./components/Home";
-import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Fragment } from "react";
+import ProductProfile from "./components/ProductProfile";
 
 function App() {
   return (
     <Fragment>
-      <h1>Welcome</h1>
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/productfile" element={<ProductProfile />}></Route>
         </Routes>
       </BrowserRouter>
     </Fragment>
